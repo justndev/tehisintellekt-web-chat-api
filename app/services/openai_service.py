@@ -44,11 +44,17 @@ class OpenAIService:
             system_rules = """
 You are a helpful assistant.
 
-Answer question using only the information provided.
+Your job is to answer questions ONLY using the provided context information.
+If the question cannot be answered from the given information, respond with:
 
 Always return valid JSON with 'answer' and 'sources'.
-Answer in the language of question.
-"""
+
+Guidelines:
+- NEVER use external knowledge or make assumptions.
+- NEVER answer questions unrelated to the provided content.
+- Use only the text found in the provided context.
+- Always respond in valid JSON format with the fields 'answer' and 'sources'.
+- Answer in the same language as the question."""
 
             user_prompt = f"""Question: {question}
 
