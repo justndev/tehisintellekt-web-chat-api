@@ -26,7 +26,7 @@ System/Host machine dependencies. Although, with Docker no need to install Postg
 
 ### 1. Clone the repository
 ```bash
-git clone tehisintellekt-web-chat-api
+git clone https://github.com/justndev/tehisintellekt-web-chat-api
 cd tehisintellekt-web-chat-api
 ```
 ### 2. Configure environment variables
